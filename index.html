@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us at the Youth Empowerment Forum</title>
+    <style>
+        /* A softer, welcoming design with personalized touches */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            color: #4a5568;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .form-container {
+            max-width: 480px;
+            width: 100%;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h3 {
+            color: #2b6cb0;
+            font-size: 24px;
+        }
+        p.description {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #718096;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #38a169;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #2f855a;
+        }
+        .gender-options, .interest-options {
+            display: flex;
+            justify-content: space-between;
+        }
+        .gender-options label, .interest-options label {
+            display: inline-block;
+            font-size: 14px;
+        }
+        .gender-options input, .interest-options input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <!-- Warm Invitation Section -->
+        <h3>Welcome to the Youth Empowerment Forum!</h3>
+        <p class="description">We're so excited to have you join us on November 15th, from 9 AM to 5 PM. It's going to be an inspiring day full of learning, connecting, and growing together. Let’s get started!</p>
+
+        <!-- Registration Form -->
+        <h3>We’d Love to Have You With Us!</h3>
+        <form>
+            <!-- Full Name -->
+            <label for="full-name">What's your full name?</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Your name here..." required>
+
+            <!-- Email Address -->
+            <label for="email">Your Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your email here..." required>
+
+            <!-- Phone Number -->
+            <label for="phone">Your Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="We’ll send you updates" required>
+
+            <!-- Gender Options -->
+            <label>How do you identify?</label>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="Male" required> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+
+            <!-- Areas of Interest -->
+            <label>What topics interest you the most?</label>
+            <div class="interest-options">
+                <label><input type="checkbox" name="interest" value="Leadership"> Leadership</label>
+                <label><input type="checkbox" name="interest" value="Tech"> Technology</label>
+                <label><input type="checkbox" name="interest" value="Community"> Community Service</label>
+            </div>
+
+            <!-- Age Range -->
+            <label for="age-range">Which age group best describes you?</label>
+            <select id="age-range" name="age-range" required>
+                <option value="">Please select your age range</option>
+                <option value="under-18">Under 18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35+">35 and above</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit">Register for the Forum</button>
+        </form>
+    </div>
+</body>
+</html>
